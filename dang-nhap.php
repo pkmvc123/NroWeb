@@ -55,64 +55,59 @@ if ($_login == null) {
 }
 ?>
 <?php include_once 'core/head.php'; ?>
-
-                    <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-24">
-                        <div class="page-layout-body">
-                            <!-- load view -->
-                            <div class="ant-row">
-    <div class="ant-col ant-col-24 home_page_bodyTitleList__UdhN_"><?php echo $_dangnhap; ?></div>
-    </div>
-<div class="ant-col ant-col-24">
-    <div class="ant-list ant-list-split">
-        <div class="ant-spin-nested-loading">
-            <div class="ant-spin-container">
-                <ul class="ant-list-items">
-                                     
-    <div class="container pt-5 pb-5">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <h4>ĐĂNG NHẬP</h4>
-                <form id="form" method="POST">
-                    <div class="form-group">
-                        <label><span class="text-danger">*</span> Tài khoản:</label>
-                        <input class="form-control" type="text" name="username" id="username"
-                            placeholder="Nhập tài khoản">
-                    </div>
-                    <div class="form-group">
-                        <label><span class="text-danger">*</span> Mật khẩu:</label>
-                        <input class="form-control" type="password" name="password" id="password"
-                            placeholder="Nhập mật khẩu">
-                    </div>
-                    <div class="form-check form-group">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="checkbox" name="accept" id="accept" checked="">
-                            Ghi nhớ đăng nhập
-                        </label>
-                        <a href="forgot-password.php" class="text-dark" style="float: right;">Quên mật
-                            khẩu</a>
-                    </div>
-                    <?php
-                    if (!empty($_alert)) {
-                        echo $_alert;
-                    }
-                    ?>
-                    <div id="notify" class="text-danger pb-2 font-weight-bold"></div>
-                    <button class="ant-btn ant-btn-default header-menu-item header-menu-item-active w-50" type="sumbit">ĐĂNG
-                        NHẬP</button>
-                </form>
+    <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-24">
+        <div class="page-layout-body">
+            <!-- load view -->
+            <div class="ant-row">
+                <div class="ant-col ant-col-24 home_page_bodyTitleList__UdhN_"><?php echo $_dangnhap; ?></div>
             </div>
-        
-                                                                    </li>
-                                                    </div>
-                        <div id="paging" class="d-flex justify-content-end align-items-center flex-wrap">
+            <div class="ant-col ant-col-24">
+                <div class="ant-list ant-list-split">
+                    <div class="ant-spin-nested-loading">
+                        <div class="ant-spin-container">
+                            <ul class="ant-list-items">
+                                <div class="container pt-5 pb-5">
+                                    <div class="row">
+                                        <div class="col-lg-6 offset-lg-3">
+                                            <h4>ĐĂNG NHẬP</h4>
+                                            <form id="form" method="POST">
+                                                <div class="form-group">
+                                                    <label><span class="text-danger">*</span> Tài khoản:</label>
+                                                    <input class="form-control" type="text" name="username" id="username"
+                                                        placeholder="Nhập tài khoản">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label><span class="text-danger">*</span> Mật khẩu:</label>
+                                                    <input class="form-control" type="password" name="password" id="password"
+                                                        placeholder="Nhập mật khẩu">
+                                                </div>
+                                                <div class="form-check form-group">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox" name="accept" id="accept" checked="">
+                                                        Ghi nhớ đăng nhập
+                                                    </label>
+                                                    <a href="forgot-password.php" class="text-dark" style="float: right;">Quên mật
+                                                        khẩu</a>
+                                                </div>
+                                                <?php
+                                                if (!empty($_alert)) {
+                                                    echo $_alert;
+                                                }
+                                                ?>
+                                                <div id="notify" class="text-danger pb-2 font-weight-bold"></div>
+                                                <button class="ant-btn ant-btn-default header-menu-item header-menu-item-active w-50" type="sumbit">ĐĂNG NHẬP</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div id="paging" class="d-flex justify-content-end align-items-center flex-wrap"></div>
+                                </div>
+                            </ul>
                         </div>
-                                    </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>                        <!-- end load view -->
-                        </div>
-                    </div>
 <?php include_once 'core/footer.php'; ?>
 </body>
 </html>
