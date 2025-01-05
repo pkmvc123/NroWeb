@@ -18,15 +18,13 @@ if (isset($_POST['username'])) {
                     <tr>
                         <td align="center" style="width: 90px; vertical-align: top;">
                             <?php
-                                        if (isset($_GET['id'])) {
-                                            // Xử lý lấy thông tin bài viết từ CSDL
-                                            $post_id = $_GET['id'];
-                                            $query = "SELECT posts.*, player.gender, account.tichdiem, account.is_admin,
-                                             account.server_login, posts.image, posts.trangthai FROM posts
-                                    LEFT JOIN player ON posts.username = player.name
-                                    LEFT JOIN account ON player.account_id = account.id
-                                    WHERE posts.id = :post_id";
-
+                                if (isset($_GET['id'])) {
+                                    // Xử lý lấy thông tin bài viết từ CSDL
+                                        $post_id = $_GET['id'];
+                                        $query = "SELECT posts.*, player.gender, account.tichdiem, account.is_admin, account.server_login, posts.image, posts.trangthai FROM posts
+                                        LEFT JOIN player ON posts.username = player.name
+                                        LEFT JOIN account ON player.account_id = account.id
+                                        WHERE posts.id = :post_id";
                                             $stmt = $conn->prepare($query);
                                             $stmt->bindParam(":post_id", $post_id, PDO::PARAM_INT);
                                             $stmt->execute();
