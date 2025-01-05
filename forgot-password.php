@@ -4,31 +4,29 @@ require_once 'core/set.php';
 require_once 'core/head.php';
 if ($_login === true) {
     echo '<script>window.location.href = "/";</script>';
-} else {
-
 }
 
 ?>
 
 <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-24">
-                        <div class="page-layout-body">
-                            <!-- load view -->
-                            <div class="ant-row">
-    <div class="ant-col ant-col-24 home_page_bodyTitleList__UdhN_">QUÊN MẬT KHẨU</div>
-    </div>
-<div class="ant-col ant-col-24">
-    <div class="ant-list ant-list-split">
-        <div class="ant-spin-nested-loading">
-            <div class="ant-spin-container">
-                <ul class="ant-list-items">
+    <div class="page-layout-body">
+        <!-- load view -->
+        <div class="ant-row">
+            <div class="ant-col ant-col-24 home_page_bodyTitleList__UdhN_">QUÊN MẬT KHẨU</div>
         </div>
-    </div>
-</div>
-<div id="data_news">
-<div class="container pt-5 pb-5">
-    <div class="row">
-        <div class="col-lg-6 offset-lg-3">
-            <h4 class="text-center">QUÊN MẬT KHẨU</h4>
+        <div class="ant-col ant-col-24">
+            <div class="ant-list ant-list-split">
+                <div class="ant-spin-nested-loading">
+                    <div class="ant-spin-container">
+                        <ul class="ant-list-items">
+                </div>
+            </div>
+        </div>
+        <div id="data_news">
+            <div class="container pt-5 pb-5">
+                <div class="row">
+                    <div class="col-lg-6 offset-lg-3">
+                        <h4 class="text-center">QUÊN MẬT KHẨU</h4>
             <?php
             require 'vendor/autoload.php';
             require 'vendor/phpmailer/phpmailer/src/Exception.php';
