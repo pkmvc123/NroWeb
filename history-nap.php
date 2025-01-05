@@ -107,15 +107,14 @@ if (isset($_username)) {
                                                                     default:
                                                                         $status = '<span>Chờ Duyệt</span>';
                                                                 }
-
                                                                 echo '<tr>
-                                                <td>' . $count . '</td>
-                                                <td>' . $row['name'] . '</td>
-                                                <td>' . number_format($row['amount']) . 'đ</td>
-                                                <td>' . $row['type'] . '</td>
-                                                <td>' . $status . '</td>
-                                                <td>' . $row['date'] . '</td>
-                                                </tr>';
+                                                                <td>' . $count . '</td>
+                                                                <td>' . $row['name'] . '</td>
+                                                                <td>' . number_format($row['amount']) . 'đ</td>
+                                                                <td>' . $row['type'] . '</td>
+                                                                <td>' . $status . '</td>
+                                                                <td>' . $row['date'] . '</td>
+                                                                </tr>';
 
                                                                 $count++; // Increment the count for the next row
                                                             }
@@ -123,10 +122,10 @@ if (isset($_username)) {
                                                             echo '</tbody>';
                                                         } else {
                                                             echo '<tbody>
-                                            <tr>
-                                                <td colspan="6" align="center"><span style="font-size:100%;"><< Lịch Sử Trống >></span></td>
-                                            </tr>
-                                        </tbody>';
+                                                                <tr>
+                                                                    <td colspan="6" align="center"><span style="font-size:100%;"><< Lịch Sử Trống >></span></td>
+                                                                </tr>
+                                                            </tbody>';
                                                         }
                                                     } else {
                                                         echo 'Chưa có tên người dùng được cung cấp.';
@@ -137,16 +136,14 @@ if (isset($_username)) {
                                         </div>
                                     </div>
                                 </div>
-                                                    </div>
-                        <div id="paging" class="d-flex justify-content-end align-items-center flex-wrap">
-                        </div>
-                                    </ul>
+                            </div>
+                            <div id="paging" class="d-flex justify-content-end align-items-center flex-wrap"></div>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
-</div>                            <!-- end load view -->
-                        </div>
-                    </div>
                     <script src="./public/dist/js/blockweb.js"></script>
 <?php include_once 'core/footer.php'; ?>
