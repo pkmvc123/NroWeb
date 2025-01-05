@@ -86,8 +86,7 @@ if ($_login == null) {
                                                         <input class="form-check-input" type="checkbox" name="accept" id="accept" checked="">
                                                         Ghi nhớ đăng nhập
                                                     </label>
-                                                    <a href="forgot-password.php" class="text-dark" style="float: right;">Quên mật
-                                                        khẩu</a>
+                                                    <a href="forgot-password.php" class="text-dark" style="float: right;">Quên mật khẩu</a>
                                                 </div>
                                                 <?php
                                                 if (!empty($_alert)) {
